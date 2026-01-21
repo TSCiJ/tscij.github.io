@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Latest Release – The Show Continues (in January)</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* ---------- Base ---------- */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Baskerville', 'Libre Baskerville', 'Times New Roman' serif;
+      color: white;
+    }
+
+    body {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ---------- Blurred background ---------- */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: url('july.jpg');
+      background-size: cover;
+      background-position: center;
+      filter: blur(20px);
+      transform: scale(1.1);
+      z-index: -2;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.65);
+      z-index: -1;
+    }
+
+    /* ---------- Header ---------- */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 20px;
+    }
+
+    .logo {
+      height: 120px;
+      max-width: 100%;
+      transition: filter 0.25s ease, transform 0.2s ease;
+    }
+
+    .logo-link:hover .logo {
+      filter: brightness(0) saturate(100%)
+      invert(55%) sepia(83%) saturate(7460%)
+      hue-rotate(300deg) brightness(102%) contrast(101%);
+}
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    nav a:hover {
+      color: #ff5ac3;
+      text-decoration: underline;
+    }
+
+    /* ---------- Main content ---------- */
+    .latest-container {
+        margin-top: -60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      padding: 40px 80px;
+      padding-left: 270px;
+      flex: 1;
+    }
+
+    .release-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Left side */
+    .release-info img {
+      width: 100%;
+      max-width: 350px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    }
+
+    .release-info h1 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 32px;
+    }
+
+    .release-info h2 {
+        text-align:center;
+        margin-top:6px;
+        font-size:12px;
+
+    }
+
+    .release-info p {
+        text-align: justify;
+        text-justify: inter-word;
+        margin-top: 4px;
+        line-height: 1.5;
+          max-width: 400px;
+    }
+
+    /* Right side */
+    .tracklist h3 {
+      margin-bottom: 10px;
+    }
+
+    .tracklist ol {
+      padding-left: 20px;
+      line-height: 1.8;
+    }
+
+    .platforms a {
+        font-size: 24px;
+        margin-right: 20px;
+        margin-top: 30px;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .platform-links a {
+      display: inline-block;
+      margin-right: 20px;
+      color: white;
+      font-size: 24px;
+      transition: transform 0.2s ease;
+    }
+
+    .platform-links a.bandcamp:hover { color: #629aa9; }
+    .platform-links a.spotify:hover { color: #1DB954; }
+    .platform-links a.youtube:hover  { color: #FF0000; }
+    .platform-links a.apple:hover { color: white; }
+
+    /* ---------- Footer ---------- */
+    footer {
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+     .footer-center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .footer-center a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer-center a:hover {
+        text-decoration: underline;
+        color: #ff5ac3;
+    }
+
+    /* ---------- Mobile ---------- */
+    @media (max-width: 900px) {
+      .latest-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .release-info img {
+        margin: 0 auto;
+      }
+
+      .release-info p {
+        margin: 10px auto;
+      }
+    }
+
+    .back-button {
+        font-family: 'Young Serif', serif;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        position: absolute;
+        bottom: 20px;
+        left: 45px;
+        text-decoration: none;
+        color: #5adbff;
+        border: 1px solid #5adbff;
+        padding: 2px 6px;
+        font-size: 10px;
+        transition: background 0.2s, transform 0.2s;
+}
+
+.back-button i {
+    font-size: 14px;
+    transition: transform 0.2s;
+}
+
+.back-button:hover {
+  background: #5adbff;
+  color: rgb(0, 0, 0);
+}
+
+.back-button:hover i {
+    transform: translateX(-3px);
+}
+
+  </style>
+</head>
+
+<body>
+
+<header>
+   <div class="header-left">
+             <a href="index.html" class="logo-link" aria-label="Back to home">
+                <img src="tscij logo white.PNG" alt="Band Logo" class="logo">
+             </a>
+        </div>
+</header>
+
+<main class="latest-container">
+
+  <!-- Left: Album + info -->
+  <section class="release-info">
+    <img src="july.jpg" alt="Latest Release Cover">
+
+    <h1>JULY </h1>
+    <h2>by<br><br>
+The Show Continues (in January) </h2>
+    <p>
+      July 2022, I (Junker), was hospitalized for two weeks. After struggling with anorexia for over a year, my immune system finally caved in. I caught a pneumonia, which should've resolved itself, but instead landed me with a tube in my back, incapable of doing anything. This was also while we were recording Sheldon's Passing, which we had to put on hold.
+During my stay, I had a lot of time to think and write about my life, the changes I had to make, the things I was grateful for and the visions being on morphine made me have.
+    </p>
+  </section>
+
+  <!-- Right: Tracklist + links -->
+  <section class="tracklist">
+    <h3>Tracklist</h3>
+    <ol>
+      <li>Split Pastel</li>
+      <li>Woman Flakes</li>
+      <li>Reflecting Me</li>
+      <li>Out Of The Circle</li>
+      <li>Evading Blues</li>
+      <li>Help Me To The Finish Line</li>
+      <li>Boy From Above</li>
+      <li>Dissociate</li>
+      <li>Sweet Carnation</li>
+      <li>July</li>
+      <li>Epidemic Dream</li>
+      <li>Right Under The Cereal</li>
+      
+    </ol>
+
+    <div class="platform-links">
+        <a href="https://tscij.bandcamp.com/album/july" class="bandcamp" aria-label="Bandcamp">
+            <i class="fa-brands fa-bandcamp"></i>
+        </a>
+      <a href="https://open.spotify.com/intl-fr/album/1PWOTbWgTlQFrzqorpMmQV?si=hbp3W18RR6qS67A4cUicRQ" class="spotify" aria-label="Spotify">
+        <i class="fa-brands fa-spotify"></i>
+      </a>
+      <a href="https://youtu.be/1dWl16g5cDY?si=pLtNpHByMkAMk7Bk" class="youtube" aria-label="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://music.apple.com/us/album/july/1823574801&ved=2ahUKEwiIw5nlztmRAxUCFDQIHQTIDD4QFnoECBsQAQ&usg=AOvVaw0NDrcGDREzhgqhwm6KiJi_" class="apple" aria-label="Apple Music">
+        <i class="fa-brands fa-apple"></i>
+    </div>
+   
+  </section>
+
+</main>
+
+</body>
+</html>

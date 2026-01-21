@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Show Continues (in January)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+
+  <style>
+
+   header, footer {
+    background-color:rgba(0, 0, 0, 0.65);
+     backdrop-filter: blur(6px);
+   }
+
+      html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Young serif', serif;
+      color: whitesmoke;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5px;
+    }
+
+    
+
+    .header-left 
+
+     .logo {
+      height: 120px;
+      max-width: 100%;
+      transition: filter 0.25s ease, transform 0.2s ease;
+    }
+
+    .logo-link:hover .logo {
+      filter: brightness(0) saturate(100%)
+      invert(55%) sepia(83%) saturate(7460%)
+      hue-rotate(300deg) brightness(102%) contrast(101%);
+}
+
+    .header-center p {
+        color:white;
+        text-decoration: none;
+        margin-left: 140px;
+        font-size: 24px}
+
+
+    .header-right a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 16px
+    }
+
+    .header-right a:hover {
+        color:#ff5ac3; 
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px;
+        font-size: 14px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-left, .footer-center, .footer-right {
+    margin: 5px 0;
+  }
+}
+
+    .footer-left { 
+        text-align: left;
+        padding: 10px;
+    }
+
+    .footer-center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .footer-right {
+        text-align: right;
+        padding: 20px;
+        flex:1;
+    }
+
+    .footer-left a {
+        text-align: left;
+        margin-left: 20px;
+        margin-right: 15px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer-center a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer-center a:hover {
+        color: #ff5ac3;
+    }
+
+    .footer-right a {
+        text-align: right;
+        margin-left: 15px;
+        color: white;
+        text-decoration: none;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        color: #ff5ac3;
+    }
+
+    .social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-right: 20px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+.social-icons a.instagram:hover {
+    color: #E4405F;
+}
+
+.social-icons a.tiktok:hover {
+    color: #25f4ee;
+}
+
+.social-icons a.youtube:hover {
+    color: #FF0000;
+}
+
+.social-icons a.spotify:hover {
+    color: #1DB954;
+}
+
+
+   .embeddable-buttondown-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 260px;
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.embeddable-buttondown-form input[type="email"],
+.embeddable-buttondown-form input[type="name"] {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px, solid #ff5ac3;
+}
+
+.embeddable-buttondown-form input[type="submit"] {
+    background-color: #ff5ac3;
+    color: black;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.embeddable-buttondown-form input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+</style>
+
+<body>
+    <header>
+       
+        <!--top left logo-->
+        <div class="header-left">
+             <a href="index.html" class="logo-link" aria-label="Back to home">
+                <img src="tscij logo white.PNG" alt="Band Logo" class="logo">
+             </a>
+        </div>
+         <div class="header-center">
+            <p>The Show Continues (in January)</p>
+        </div>
+        <!--top right navigation-->
+        <nav class="header-right">
+            <a href="latest.html">JULY</a>
+            <a href="live.html">LIVE</a>
+            <a href="https://tscij.bandcamp.com">STORE</a>
+            <a href="fr-newsletter.html">FR</a>
+        </nav>
+    </header>
+
+    <form
+  action="https://buttondown.com/api/emails/embed-subscribe/theshowcontinuesinjanuary"
+  method="post"
+  class="embeddable-buttondown-form"
+>
+  <label for="bd-name">Name</label>
+  <input type="text" name="name" id="bd-name" />
+  <label for="bd-email">Email</label>
+  <input type="email" name="email" id="bd-email" />
+  <input type="submit" value="Subscribe" />
+  <p>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="https://buttondown.com/refer/theshowcontinuesinjanuary" target="_blank"> <br>
+      Powered by Buttondown.
+    </a>
+  </p>
+</form>
+
+    <footer>
+        <!--bottom left socials-->
+        <div class="footer-left social-icons">
+            <a href="https://www.instagram.com/theshowcontinues_injanuary?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram" class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@theshowcontinuesinjan?is_from_webapp=1&sender_device=pc" target="_blank" aria-label="Tiktok" class="tiktok">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="http://www.youtube.com/@TheShowContinuesinJanuary" target="_blank" aria-label="YouTube" class="youtube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://open.spotify.com/intl-fr/artist/2E9mQTvABK1sH4FFw0hZc6?si=PGKhcj5USEi_IJLNMwjuuQ" target="_blank" aria-label="Spotify" class="spotify">
+                <i class="fa-brands fa-spotify"></i>
+            </a>
+        </div>
+        <!--contact us-->
+        <div class="footer-center">
+            <p>CONTACT US</p>
+            <p><a href="mailto:info@theshowcontinuesinjanuary.ca">info@theshowcontinuesinjanuary.ca</a>
+            </a></p>
+        </div>
+        <!--bottom right-->
+        <div class="footer-right">
+            <a href="newsletter.html">NEWSLETTER</a>
+            <a href="privacy-policy.html">PRIVACY POLICY</a>
+        </div>
+    </footer>
+
+
+</body>
+</html>
+
+
+

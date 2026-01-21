@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Show Continues (in January)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+
+  <style>
+    header,
+    footer {
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(6px);
+}
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      background-color: black; 
+      font-family: 'Young serif', serif;
+      color: rgb(255, 255, 255);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5px;
+    }
+
+    
+
+    .header-left  .logo {
+      height: 120px;
+      max-width: 100%;
+      transition: filter 0.25s ease, transform 0.2s ease;
+    }
+
+    .logo-link:hover .logo {
+      filter: brightness(0) saturate(100%)
+      invert(55%) sepia(83%) saturate(7460%)
+      hue-rotate(300deg) brightness(102%) contrast(101%);
+}
+
+    .header-center p {
+        color:white;
+        text-decoration: none;
+        margin-left: 140px;
+        font-size: 24px}
+
+
+    .header-right a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 16px
+    }
+
+    .header-right a:hover {
+        color:#ff5ac3; 
+    }
+
+    .policy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .policy h1 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 32px;
+    }
+
+    .policy h2 {
+        text-align: left;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    .policy p {
+        text-align: justify;
+        text-justify: inter-word;
+        margin-top: 4px;
+        font-size: 16px;
+        line-height: 1.5;
+        max-width: 800px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px;
+        font-size: 14px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-left, .footer-center, .footer-right {
+    margin: 5px 0;
+  }
+}
+
+    .footer-left { 
+        text-align: left;
+        padding: 10px;
+    }
+
+    .footer-center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .footer-right {
+        text-align: right;
+        padding: 20px;
+        flex:1;
+    }
+
+    .footer-left a {
+        text-align: left;
+        margin-left: 20px;
+        margin-right: 15px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer-center a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer-center a:hover {
+        color: #ff5ac3;
+    }
+
+    .footer-right a {
+        text-align: right;
+        margin-left: 15px;
+        color: white;
+        text-decoration: none;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        color: #ff5ac3;
+    }
+
+    .social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-right: 20px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+.social-icons a.instagram:hover {
+    color: #E4405F;
+}
+
+.social-icons a.tiktok:hover {
+    color: #25f4ee;
+}
+
+.social-icons a.youtube:hover {
+    color: #FF0000;
+}
+
+.social-icons a.spotify:hover {
+    color: #1DB954;
+}
+
+  </style>
+</head>
+
+
+
+<body>
+    <header>
+       
+        <!--top left logo-->
+        <div class="header-left">
+             <a href="index.html" class="logo-link" aria-label="Back to home">
+                <img src="tscij logo white.PNG" alt="Band Logo" class="logo">
+             </a>
+        </div>
+         <div class="header-center">
+            <p>PRIVACY POLICY</p>
+        </div>
+        <!--top right navigation-->
+        <nav class="header-right">
+            <a href="latest.html">JULY</a>
+            <a href="live.html">LIVE</a>
+            <a href="https://tscij.bandcamp.com">STORE</a>
+            <a href="fr-privacy-policy.html">FR</a>
+        </nav>
+
+    </header>
+
+    <main class="policy">
+        <h1>TSCiJ's Privacy Policy</h1>
+        <p>Last revised 12 January 2026<br><br>
+            This Privacy Policy describes the policies and procedures of The Show Continues (in January)’s (herein “we, “us”, “our”) collection, use and disclosure of your information in connection with your use of our website, including the services and content we offer. When using this site, you are consenting to the collection, transfer, manipulation, storage, disclosure of your information as described in this Privacy Policy.
+        </p>
+        <h2>What does this Privacy Policy cover?</h2>
+        <p>In short: This Privacy Policy covers the treatment of your Personal Information gathered when using our services.<br><br>This Privacy Policy covers the treatment of your Personal Information gathered when using our services. Unless defined otherwise, this Privacy Policy’s use of the term “Personal Information” describes information that identifies, describes, or is reasonably capable of identifying or being associated with an individual. This includes information such as a full name, e-mail address, IP address, telephone number or postal address. Such is the extent of the information we collect when you visit our website.
+            <br>The Show Continues (in January) respects your privacy and is committed to protecting your personal information in accordance with Canadian privacy laws. The purpose of this Privacy Policy is to explain in the clearest way possible what Personal Information we collect, why and how we use it, as well as the rights you have in relation to it. Please read this Privacy Policy attentively as it will guide you in making informed decisions about sharing your Personal Information with us. If you have any questions or concerns about this Privacy Policy, please contact us at info@theshowcontinuesinjanuary.ca.
+        </p>
+        <h2>What information do we collect?</h2>
+        <p>In short: We collect some information, such as your IP address, automatically when you subscribe to our newsletter, and some other information that you share voluntarily. <br><br>
+        We only collect information that you voluntarily provide when signing up for our Newsletter, such as your full name and e-mail address. Additionally, we automatically collect your IP address through our use of Buttondown. <br>
+        Through our Newsletter, we send our fans information about show dates, new music, side projects and other The Show Continues (in January) related material. By signing up, you consent to the collection and use of your e-mail address for this purpose. You may withdraw consent at any time by unsubscribing to our Newsletter.</p>
+        <h2>Who do we share you information with?</h2>
+        <p>In short: We do not sell, rent or share your information with any third party. We only share information with your consent, to comply with laws, to protect your rights or to fulfil business obligations.<br><br>
+        We may process or share data based on the following legal basis:<br>
+        -	Consent: We may process your data if you have given us specific consent to use your Personal Information in a specific purpose.<br>
+-	Legitimate interests: We may process your data when it is reasonably necessary to achieve our legitimate business interests.<br>
+-	Legal obligations: We may disclose your information where we are legally required to do so to comply with applicable law, governmental requests, a judicial proceeding, court order or legal process, such as in response to a court order or a subpoena.<br>
+-	Vital interests: We may disclose your information where we believe it is necessary to investigate, prevent or take action in regard to potential violations of our policies, fraud, situations involving potential threats to the safety of any person and illegal activities, or as evidence in litigation in which we are involved.
+    </p>
+    <h2>What do to if you have questions or concerns?</h2>
+    <p>If you have questions or concerns regarding privacy using our site, please send us a detailed message to info@theshowcontinuesinjanuary.ca. We will make every effort possible to resolve your concerns.</p>
+
+    </main>
+
+
+
+    <footer>
+        <!--bottom left socials-->
+        <div class="footer-left social-icons">
+            <a href="https://www.instagram.com/theshowcontinues_injanuary?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram" class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@theshowcontinuesinjan?is_from_webapp=1&sender_device=pc" target="_blank" aria-label="Tiktok" class="tiktok">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="http://www.youtube.com/@TheShowContinuesinJanuary" target="_blank" aria-label="YouTube" class="youtube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://open.spotify.com/intl-fr/artist/2E9mQTvABK1sH4FFw0hZc6?si=PGKhcj5USEi_IJLNMwjuuQ" target="_blank" aria-label="Spotify" class="spotify">
+                <i class="fa-brands fa-spotify"></i>
+            </a>
+        </div>
+        <!--contact us-->
+        <div class="footer-center">
+            <p>CONTACT US</p>
+            <p><a href="mailto:info@theshowcontinuesinjanuary.ca">info@theshowcontinuesinjanuary.ca</a>
+            </a></p>
+        </div>
+        <!--bottom right-->
+        <div class="footer-right">
+            <a href="newsletter.html">NEWSLETTER</a>
+            <a href="privacy-policy.html">PRIVACY POLICY</a>
+        </div>
+    </footer>
+
+
+</body>
+</html>
